@@ -10,6 +10,14 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        /*
+         * To use 'Safe Args' : a plugin that allows you to pass data in a more efficient, safe, and encapsulated way.
+         *
+         * Before we were using 'Bundle' which has a lack of type safety that could easily crash the application.
+         *
+         * https://www.section.io/engineering-education/safe-args-in-android/
+         */
         def nav_version = "2.1.0"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
         // NOTE: Do not place your application dependencies here; they belong
