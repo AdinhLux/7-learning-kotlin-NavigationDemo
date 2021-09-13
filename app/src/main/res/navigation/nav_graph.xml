@@ -3,4 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph">
 
+    <!-- To host a navigation graph, we need a host fragment -->
+    <!-- Navigation graph connect to the other parts of the app through this host fragment -->
 </navigation>
