@@ -39,6 +39,11 @@ class SecondFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_second, container, false)
+
+        // Reading Bundle value from HomeFragment.kt . !! for not null arguments (or use requireArguments)
+        val input = requireArguments().getString("user_input")
+        binding.tvSecond.text = input.toString()
+
         return binding.root
     }
 
